@@ -1,2 +1,2 @@
-./archiver/ 5
-./archiver 7
+./archiver 5
+./archiver 5
