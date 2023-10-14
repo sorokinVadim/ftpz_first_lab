@@ -13,7 +13,6 @@ async def timered_maker(timer: config.Timer):
         logging.info(f"Run with timer {timer.seconds}")
         now = datetime.today()
         archname = f"archive_{now.strftime('%Y%m%d%H%S')}{rint(1000, 9999)}"
-        archname = f"archive_{now.strftime('%Y%m%d%H%S')}"
         logging.info(f"Make an archive with name {timer.filename}")
         shutil.make_archive(archname, "zip", timer.filename)
         logging.info(f"Done with timer {timer.seconds}")
